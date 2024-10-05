@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -60,5 +61,50 @@ body {
 
 .medicines div {
   margin-bottom: 5mm;
-  text-indent: -5mm; 
+  text-indent: -5mm;
+}
+
+
+
+.investigation {
+  position: absolute;
+  top: 22cm; 
+  left: 1cm;
+  width: 3.5cm;
+  height: 2.1cm;
+  border: none;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.quadrant {
+  padding: 2mm;
+  box-sizing: border-box;
+}
+.q1{
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+
+}
+.q2{
+  border-bottom: 2px solid;
+}
+.q3{
+  border-right: 2px solid;
+
+}
+
+.treatment {
+  position: absolute;
+  top: 25cm; 
+  left: 1cm;
+  width: 3.5cm;
+  height: 2.1cm;
+  border: none;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }

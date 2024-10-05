@@ -2,11 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f8ff; 
-  color: #333; 
+  background-color: #f0f8ff;
+  color: #333;
   font-weight: bold;
 }
-img{
+
+img {
   border: 2px solid;
   border-radius: 20%;
 }
@@ -14,7 +15,7 @@ img{
 header {
   width: 100%;
   background-color: #2468ac;
-  color: white; 
+  color: white;
   padding: 10px 20px;
   box-sizing: border-box;
   text-align: center;
@@ -36,7 +37,7 @@ header .header-content {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  text-align: left; 
+  text-align: left;
 }
 
 .clinic-info {
@@ -44,14 +45,14 @@ header .header-content {
   text-align: left;
 }
 
-span{
-    font-size: 1.2em;
+span {
+  font-size: 1.2em;
 }
 
 .clinic-logo {
   max-width: 100px;
   height: auto;
-  margin: 0 20px; 
+  margin: 0 20px;
 }
 
 .logo-and-specialization {
@@ -62,7 +63,7 @@ span{
 .form-container {
   width: 100%;
   padding: 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 #prescription-form {
@@ -72,7 +73,7 @@ span{
 
 .info-row {
   display: flex;
-  background-color: #e6f7ff; 
+  background-color: #e6f7ff;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
@@ -86,7 +87,7 @@ span{
 }
 
 .info-row .left {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .info-row label {
@@ -102,36 +103,37 @@ span{
   border: none;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  background-color: #e6f7ff; 
+  background-color: #e6f7ff;
   font-size: 1em;
   width: 100%;
   box-sizing: border-box;
 }
+
 #cc {
   margin-top: 10px;
-  background-color: #e6f7ff; 
+  background-color: #e6f7ff;
   padding: 10px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   display: flex;
-  align-items: center; 
+  align-items: center;
   box-sizing: border-box;
 }
 
 #cc label {
   font-weight: bold;
-  margin-right: 10px; 
-  flex: 0 0 auto; 
+  margin-right: 10px;
+  flex: 0 0 auto;
 }
 
 #cc input {
-  flex: 1; 
+  flex: 1;
   padding: 10px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   border-left: none;
   border-right: none;
-  background-color: #e6f7ff; 
+  background-color: #e6f7ff;
   font-size: 1em;
   box-sizing: border-box;
 }
@@ -156,3 +158,42 @@ button:hover {
   margin-bottom: 10px;
 }
 
+/* Styles for Investigation Box */
+.investigation-box ,.treatment-box{
+  margin-top: 15px;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #a4e7d9;
+}
+
+.investigation-box label ,.treatment-box label{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.investigation-box .quadrant-container , .treatment-box .quadrant-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.quadrant-container .quadrant input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+#treatment-extra,#investigation-extra
+ {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

@@ -7,7 +7,6 @@
     <title>Prescription Generator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="addmedi.css">
-
 </head>
 
 <body>
@@ -32,8 +31,6 @@
             </div>
         </div>
     </header>
-
-
 
     <div class="form-container">
         <form id="prescription-form">
@@ -66,10 +63,32 @@
             <div id="medicine-list"></div>
 
             <button type="button" id="add-medicine-btn">+ Add Medicine</button>
+
+            <div class="investigation-box">
+                <label>Investigation:</label>
+                <div class="quadrant-container">
+                    <div class="quadrant"><input type="text" id="q1" name="q1" placeholder="Q1"></div>
+                    <div class="quadrant"><input type="text" id="q2" name="q2" placeholder="Q2"></div>
+                    <div class="quadrant"><input type="text" id="q3" name="q3" placeholder="Q3"></div>
+                    <div class="quadrant"><input type="text" id="q4" name="q4" placeholder="Q4"></div>
+                </div>
+                <input type="text" id="investigation-extra" name="investigation-extra" placeholder="Investigation Details">
+                
+            </div>
+            <div class="treatment-box">
+                <label>Treatment:</label>
+                <div class="quadrant-container">
+                    <div class="quadrant"><input type="text" id="q1" name="q1" placeholder="Q1"></div>
+                    <div class="quadrant"><input type="text" id="q2" name="q2" placeholder="Q2"></div>
+                    <div class="quadrant"><input type="text" id="q3" name="q3" placeholder="Q3"></div>
+                    <div class="quadrant"><input type="text" id="q4" name="q4" placeholder="Q4"></div>
+                </div>
+                <input type="text" id="treatment-extra" name="treatment-extra" placeholder="Treatment Details">
+            </div>
+
             <button type="button" onclick="generatePrescription()">Generate Prescription</button>
         </form>
     </div>
-
 
     <script src="scripts.js"></script>
 </body>

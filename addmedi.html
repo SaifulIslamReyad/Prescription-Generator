@@ -1,30 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medicine Entry Template</title>
     <link rel="stylesheet" href="addmedi.css">
 </head>
+
 <body>
     <div class="medicine-entry">
         <label for="medicine-input">Medicine:</label>
-        <input type="text" id="medicine-input" name="medicine" placeholder="Enter or choose a medicine" list="medicine-suggestions">
+        <input type="text" id="medicine-input" name="medicine" placeholder="Enter or choose a medicine"
+            list="medicine-suggestions">
         <datalist id="medicine-suggestions">
-            <option value="Amoxicillin">
-            <option value="Ibuprofen">
-            <option value="Paracetamol">
-            <option value="Ciprofloxacin">
-            <option value="Doxycycline">
-            <option value="Azithromycin">
-            <option value="Aspirin">
-            <option value="Naproxen">
+            <option value="Cap. Denvar 200mg">
+            <option value="Cap. Denvar 400mg">
+            <option value="Cap. Cef-3 200mg">
+            <option value="Cap. Cef-3 400mg">
+            <option value="Cap. Ceftid 200mg">
+            <option value="Cap. Ceftid 400mg">
+            <option value="Cap. Cefix 200mg">
+            <option value="Cap. Cefix 400mg">
+            <option value="Tab. Moxaclav 500mg+125mg">
+            <option value="Tab. Moxaclav 250mg+125mg">
+            <option value="Tab. Clacido 250mg+125mg">
+            <option value="Tab. Clacido 500mg+125mg">
+            <option value="Tab. Cefotil Plus 250mg+62.5mg">
+            <option value="Tab. Cefotil Plus 500mg+125mg">
+            <option value="Tab. Rozith 500mg">
+            <option value="Tab. Zimax 500mg">
+            <option value="Cap. Fluclox 250mg">
+            <option value="Tab. Rolac 10mg">
+            <option value="Tab. Acupain 10mg">
+            <option value="Tab. Xidolac Meltab 10mg">
+            <option value="Tab. Torax 10mg">
+            <option value="Tab. Ket 10mg">
+            <option value="Tab. Pair 10mg">
+            <option value="Tab. Flexi 100mg">
+            <option value="Tab. Flamex 200mg">
+            <option value="Tab. Flamex 400mg">
+            <option value="Tab. Profen 200mg">
+            <option value="Tab. Profen 400mg">
+            <option value="Tab. Napa 500mg">
+            <option value="Tab. Napa Extra 500mg+65mg">
+            <option value="Tab. Reset 500mg">
+            <option value="Tab. Renova 500mg">
+            <option value="Tab. Nexum mups 20mg">
+            <option value="Cap. Sergel 20mg">
+            <option value="Cap. Losectil 20mg">
+            <option value="Cap. Finix 20mg">
+            <option value="Tab. Finix 10mg">
+            <option value="Tab. Famotack 20mg">
+            <option value="Syrup. Lebac 125mg/5ml">
+            <option value="Syrup. Intracef 125mg/5ml">
+            <option value="Syrup. Procef 125mg/5ml">
+            <option value="Syrup. Abac 125mg/5ml">
+            <option value="Syrup. Cef-3 100mg/5ml">
+            <option value="Syrup. Denvar 100mg/5ml">
+            <option value="Syrup. Napa 120mg/5ml">
+            <option value="Syrup. Flamex 100mg/5ml">
+            <option value="Syrup. Asynta Max">
+            <option value="Syrup. Famotack">
+            <option value="Viodin Mouthwash">
+            <option value="Benostar Mouthwash">
+            <option value="Oryza Mouthwash">
+            <option value="Oral-C Mouthwash">
+            <option value="Ororinse Mouthwash">
+            <option value="Tab. Ceevit 250mg">
+            <option value="Cap. Codvit 600IU+85IU+0.3IU">
+            <option value="Tab. Becoral D 500mg+200IU">
+            <option value="Tab. Omidon 10mg">
+            <option value="Micoral Oral Gel">
+            <option value="Trialon Oral Paste 0.1% w/w">
+            <option value="Kenalog Oral Paste">
+            <option value="Sensodyne Tooth Paste">
+            <option value="Colgate Sensitive Pro-Relief Paste">
+            <option value="Mediplus DS">
+            <option value="Mediplus Flouride Gel">
+            <option value="Mediplus Tooth Brush">
+            <option value="Dental Floss">
         </datalist>
 
         <div class="checkbox-group">
-            <label><input type="checkbox" name="time" value="morning"/> Morning</label>
-            <label><input type="checkbox" name="time" value="noon"/> Noon</label>
-            <label><input type="checkbox" name="time" value="night"/> Night</label>
+            <label><input type="checkbox" name="time" value="morning" /> Morning</label>
+            <label><input type="checkbox" name="time" value="noon" /> Noon</label>
+            <label><input type="checkbox" name="time" value="night" /> Night</label>
         </div>
 
         <div class="before-eating">
@@ -37,10 +98,16 @@
             <label for="after-eating">After eating</label>
         </div>
 
+        <div class="eat-when-pain">
+            <input type="checkbox" id="eat-when-pain" name="eat-when-pain">
+            <label for="eat-when-pain">Eat when you feel pain</label>
+        </div>
+
         <label for="days-input"></label>
         <input type="number" id="days-input" name="days" placeholder="For how many days?">
 
         <button type="button">Remove</button>
     </div>
 </body>
+
 </html>
