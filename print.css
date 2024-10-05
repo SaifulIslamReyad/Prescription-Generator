@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.print-content {
+  width: 21.2cm;
+  height: 28cm;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  background-image: url("real.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.name {
+  position: absolute;
+  top: 53.95mm;
+  left: 30mm;
+}
+
+.age {
+  position: absolute;
+  top: 53.95mm;
+  left: 127mm;
+}
+
+.sex {
+  position: absolute;
+  top: 53.95mm;
+  left: 152mm;
+}
+
+.date {
+  position: absolute;
+  top: 53.95mm;
+  left: 180mm;
+  text-align: right;
+}
+
+.cc {
+  position: absolute;
+  top: 75mm;
+  left: 12mm;
+}
+
+.medicines {
+  position: absolute;
+  top: 90mm;
+  left: 75mm;
+  text-align: left;
+  font-size: 15pt; 
+}
+
+.medicines div {
+  margin-bottom: 5mm;
+  text-indent: -5mm; 
+}

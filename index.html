@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="addmedi.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>ZS Sharif Dental Care & Surgery</h1>
+        <p class="tagline">You smile, our team smiles</p>
+        <div class="header-content">
+            <div class="clinic-info">
+                <p class="doctor-info">
+                    <span>Dr. Md. Ashraful Islam Suhad <br></span>
+                    BDS (Dhaka University)<br>
+                    Sher-E-Bangla Medical College and hospital, Barishal
+                </p>
+            </div>
+            <img src="logo.jpg" alt="Clinic Logo" class="clinic-logo">
+            <div class="logo-and-specialization">
+                <p class="specialization">
+                    Oral and dental specialist & surgeon<br>
+                    Special Training on Root canal Treatment<br>
+                    BMDC Regi No: 14041
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="form-container">
+        <form id="prescription-form">
+            <div class="info-row">
+                <div class="left">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="right">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+
+                    <label for="sex">Sex:</label>
+                    <select id="sex" name="sex" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+            </div>
+
+            <div id="cc">
+                <label for="cc-input">C/C:</label>
+                <input type="text" id="cc-input" name="cc" required>
+            </div>
+
+            <div id="medicine-list"></div>
+
+            <button type="button" id="add-medicine-btn">+ Add Medicine</button>
+            <button type="button" onclick="generatePrescription()">Generate Prescription</button>
+        </form>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
